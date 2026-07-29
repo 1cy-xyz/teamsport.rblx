@@ -286,3 +286,12 @@ if(protectedPages.includes(currentPage)){
 
 
 }
+
+function logout(){
+
+    localStorage.removeItem("loggedIn");
+    localStorage.removeItem("role");
+
+    window.location.href="login.html";
+
+}
