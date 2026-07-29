@@ -1210,3 +1210,116 @@ body {
     }
 
 }
+
+/* =====================
+   ANNOUNCEMENTS PAGE
+===================== */
+
+
+.announcement-container {
+
+    padding:20px 70px 60px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:25px;
+
+}
+
+
+
+.announcement-card {
+
+    background:#1c1c1c;
+
+    border:1px solid #2b2b2b;
+
+    border-radius:16px;
+
+    padding:25px;
+
+    transition:.3s;
+
+}
+
+
+
+.announcement-card:hover {
+
+    transform:translateX(8px);
+
+    border-color:#00aeef;
+
+}
+
+
+
+.announcement-card.priority {
+
+    border-left:5px solid #e74c3c;
+
+}
+
+
+
+.announcement-header {
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:15px;
+
+}
+
+
+
+.announcement-header h2 {
+
+    font-size:22px;
+
+}
+
+
+
+.announcement-header span {
+
+    background:#00aeef;
+
+    color:white;
+
+    padding:6px 12px;
+
+    border-radius:20px;
+
+    font-size:12px;
+
+    font-weight:700;
+
+}
+
+
+
+.announcement-card p {
+
+    color:#c0c0c0;
+
+    line-height:1.6;
+
+    margin-bottom:20px;
+
+}
+
+
+
+.announcement-card footer {
+
+    color:#777;
+
+    font-size:14px;
+
+}
