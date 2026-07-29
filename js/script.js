@@ -249,3 +249,40 @@ document.getElementById(
 
 
 }
+
+// ==========================
+// PAGE PROTECTION
+// ==========================
+
+
+const protectedPages = [
+
+"staff.html",
+"track.html",
+"live.html",
+"karts.html",
+"statistics.html",
+"announcements.html",
+"dashboard.html"
+
+];
+
+
+const currentPage = window.location.pathname.split("/").pop();
+
+
+
+if(protectedPages.includes(currentPage)){
+
+
+    const loggedIn = localStorage.getItem("loggedIn");
+
+
+    if(loggedIn !== "true"){
+
+        window.location.href = "login.html";
+
+    }
+
+
+}
