@@ -1323,3 +1323,103 @@ body {
     font-size:14px;
 
 }
+
+/* LOGIN PAGE */
+
+
+.login-page {
+
+height:100vh;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+background:
+radial-gradient(
+circle,
+#003b55,
+#0e0e0e
+);
+
+}
+
+
+
+.login-box {
+
+background:#1c1c1c;
+
+padding:40px;
+
+border-radius:20px;
+
+width:350px;
+
+text-align:center;
+
+border:1px solid #333;
+
+}
+
+
+
+.login-box h1 {
+
+font-size:40px;
+
+}
+
+
+
+.login-box p {
+
+color:#aaa;
+
+margin:15px;
+
+}
+
+
+
+.login-box input {
+
+width:100%;
+
+padding:14px;
+
+margin:10px 0;
+
+background:#111;
+
+border:1px solid #333;
+
+border-radius:10px;
+
+color:white;
+
+}
+
+
+
+.login-box button {
+
+width:100%;
+
+padding:14px;
+
+background:#00aeef;
+
+border:none;
+
+border-radius:10px;
+
+color:white;
+
+font-weight:bold;
+
+cursor:pointer;
+
+}
