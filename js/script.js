@@ -256,42 +256,50 @@ document.getElementById(
 
 
 const protectedPages = [
-
-"staff.html",
-"track.html",
-"live.html",
-"karts.html",
-"statistics.html",
-"announcements.html",
-"dashboard.html"
-
+    "staff.html",
+    "track.html",
+    "live.html",
+    "karts.html",
+    "statistics.html",
+    "announcements.html",
+    "dashboard.html"
 ];
 
 
-const currentPage = window.location.pathname.split("/").pop();
+let currentPage = window.location.pathname.split("/").pop();
 
+
+// If URL is just / use index.html
+if(currentPage === ""){
+    currentPage = "index.html";
+}
 
 
 if(protectedPages.includes(currentPage)){
 
-
-    const loggedIn = localStorage.getItem("loggedIn");
+    let loggedIn = localStorage.getItem("loggedIn");
 
 
     if(loggedIn !== "true"){
 
-        window.location.href = "login.html";
+        window.location.replace("login.html");
 
     }
 
-
 }
+
+
+
+// ==========================
+// LOGOUT
+// ==========================
+
 
 function logout(){
 
     localStorage.removeItem("loggedIn");
     localStorage.removeItem("role");
 
-    window.location.href="login.html";
+    window.location.replace("login.html");
 
 }
