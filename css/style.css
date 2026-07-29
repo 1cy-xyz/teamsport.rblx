@@ -351,3 +351,170 @@ body {
 
 
 }
+
+/* =====================
+   STAFF PAGE
+===================== */
+
+
+.page-header {
+
+    padding: 60px 70px 30px;
+
+}
+
+
+.page-header h1 {
+
+    font-size: 42px;
+
+}
+
+
+.page-header p {
+
+    color:#999;
+
+    margin-top:10px;
+
+}
+
+
+
+.staff-grid {
+
+    padding:20px 70px 60px;
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(300px,1fr));
+
+    gap:30px;
+
+}
+
+
+
+.staff-card {
+
+    background:#1c1c1c;
+
+    border:1px solid #2b2b2b;
+
+    border-radius:16px;
+
+    padding:25px;
+
+    transition:.3s;
+
+}
+
+
+
+.staff-card:hover {
+
+    transform:translateY(-6px);
+
+    border-color:#00aeef;
+
+}
+
+
+
+.staff-top {
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:25px;
+
+}
+
+
+
+.staff-top h2 {
+
+    font-size:24px;
+
+}
+
+
+
+.online {
+
+    color:#2ecc71;
+
+    font-size:14px;
+
+}
+
+
+.offline {
+
+    color:#e74c3c;
+
+    font-size:14px;
+
+}
+
+
+
+.staff-card p {
+
+    color:#aaa;
+
+    margin:15px 0;
+
+}
+
+
+
+.staff-card strong {
+
+    display:block;
+
+    color:white;
+
+    margin-top:5px;
+
+}
+
+
+
+.staff-card button {
+
+    width:100%;
+
+    margin-top:20px;
+
+    padding:12px;
+
+    background:#00aeef;
+
+    color:white;
+
+    border:none;
+
+    border-radius:10px;
+
+    font-size:15px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+
+
+.staff-card button:hover {
+
+    background:white;
+
+    color:#111;
+
+}
