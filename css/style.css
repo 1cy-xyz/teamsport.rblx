@@ -893,3 +893,135 @@ body {
     border:1px solid #555!important;
 
 }
+
+/* =====================
+   KART MANAGEMENT PAGE
+===================== */
+
+
+.kart-grid {
+
+    padding:20px 70px 60px;
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(300px,1fr));
+
+    gap:30px;
+
+}
+
+
+
+.kart-card {
+
+    background:#1c1c1c;
+
+    border:1px solid #2b2b2b;
+
+    border-radius:16px;
+
+    padding:25px;
+
+    transition:.3s;
+
+}
+
+
+
+.kart-card:hover {
+
+    transform:translateY(-6px);
+
+    border-color:#00aeef;
+
+}
+
+
+
+.kart-header {
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:25px;
+
+}
+
+
+
+.kart-header h2 {
+
+    font-size:24px;
+
+}
+
+
+
+.warning {
+
+    color:#f1c40f;
+
+    font-size:14px;
+
+}
+
+
+
+.kart-card p {
+
+    color:#999;
+
+    margin:15px 0;
+
+}
+
+
+
+.kart-card strong {
+
+    display:block;
+
+    color:white;
+
+    margin-top:5px;
+
+}
+
+
+
+.kart-card button {
+
+    width:100%;
+
+    margin-top:20px;
+
+    padding:12px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:#00aeef;
+
+    color:white;
+
+    cursor:pointer;
+
+    font-weight:600;
+
+}
+
+
+
+.kart-card button:hover {
+
+    background:white;
+
+    color:#111;
+
+}
