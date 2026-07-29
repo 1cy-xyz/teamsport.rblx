@@ -166,3 +166,86 @@ posts.forEach(post => {
 
 
 });
+
+// ==========================
+// LOGIN SYSTEM
+// ==========================
+
+
+function login(){
+
+
+const username =
+document.getElementById("username").value;
+
+
+const password =
+document.getElementById("password").value;
+
+
+
+// Temporary accounts
+
+const users = [
+
+{
+username:"manager",
+password:"teamsport123",
+role:"Manager"
+},
+
+
+{
+username:"marshal",
+password:"marshal123",
+role:"Staff"
+}
+
+];
+
+
+
+const account = users.find(user =>
+
+user.username === username &&
+user.password === password
+
+);
+
+
+
+if(account){
+
+
+localStorage.setItem(
+"loggedIn",
+"true"
+);
+
+
+localStorage.setItem(
+"role",
+account.role
+);
+
+
+
+window.location.href =
+"dashboard.html";
+
+
+
+}else{
+
+
+document.getElementById(
+"login-message"
+).innerHTML =
+"Incorrect login details";
+
+
+}
+
+
+
+}
